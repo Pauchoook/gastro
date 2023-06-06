@@ -7,3 +7,4 @@ flsFunctions.mediaAdaptive();
 
 burger();
 headerScroll();
+sliders();
