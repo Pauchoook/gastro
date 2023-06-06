@@ -1,0 +1,116 @@
+.sport {
+  &__top {
+    position: relative;
+    padding: 170px;
+    @include desktop {
+      padding: 120px 0px;
+    }
+    @include laptop {
+      padding: 90px 0px;
+    }
+    @include tablet {
+      padding: 75px 0px 0px 0px;
+    }
+  }
+  &__info {
+    max-width: 560px;
+    margin-left: auto;
+    @include laptop {
+      max-width: 385px;
+    }
+    @include tablet {
+      max-width: none;
+      padding-bottom: 40px;
+    }
+  }
+  &__title {
+    margin: 0px 0px 50px 0px;
+  }
+  &__content {
+    margin: 0;
+    font-size: 24px;
+    line-height: 130%;
+    span {
+      font-weight: 700;
+    }
+    @include laptop {
+      font-size: 22px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    width: 860px;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    @media (max-width: 1679px) {
+      width: 650px;
+    }
+    @include desktop {
+      width: 580px;
+    }
+    @include laptop {
+      width: 55%;
+    }
+    @include laptop-min {
+      width: 43%;
+    }
+    @include tablet {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__bottom {
+    padding: 200px 0px;
+    background-color: var(--green-3);
+    color: var(--gray-1);
+    @include desktop {
+      padding: 150px 0px;
+    }
+    @include laptop {
+      padding: 120px 0px;
+    }
+    @include laptop-min {
+      padding: 90px 0px;
+    }
+    @include tablet {
+      padding: 75px 0px 55px 0px;
+    }
+  }
+  &__bottom-container {
+    @include flex-between;
+    gap: 45px;
+    @include laptop-min {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  &__bottom-content {
+    margin: 0;
+    max-width: 845px;
+    font-size: 40px;
+    line-height: 120%;
+    @include laptop {
+      font-size: 32px;
+    }
+    @include tablet {
+      font-size: 26px;
+    }
+  }
+  &__bottom-btn {
+    display: inline-block;
+    max-width: 390px;
+    width: 100%;
+    @media (max-width: 479px) {
+      max-width: none;
+      text-align: center;
+    }
+  }
+}

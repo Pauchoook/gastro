@@ -686,6 +686,38 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   color: var(--blue-2);
 }
 
+.btn-fill {
+  padding: 24px 64px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+@media (max-width: 767px) {
+  .btn-fill {
+    padding: 16px 32px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .btn-fill {
+    font-size: 20px;
+  }
+}
+.btn-fill.btn-peach {
+  color: var(--gray-1);
+  background-color: var(--peach-3);
+}
+@media (any-hover: hover) {
+  .btn-fill.btn-peach:hover {
+    color: var(--dark-purple);
+    background-color: var(--peach-1);
+  }
+}
+.btn-fill.btn-peach:active {
+  background-color: var(--peach-3);
+}
+
 .list {
   padding-left: 0;
   margin: 0;
@@ -1427,6 +1459,163 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 @media (max-width: 767px) {
   .offer__slider-btn-icon {
     width: 17px;
+  }
+}
+
+.sport__top {
+  position: relative;
+  padding: 170px;
+}
+@media (max-width: 1439px) {
+  .sport__top {
+    padding: 120px 0px;
+  }
+}
+@media (max-width: 1199px) {
+  .sport__top {
+    padding: 90px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .sport__top {
+    padding: 75px 0px 0px 0px;
+  }
+}
+.sport__info {
+  max-width: 560px;
+  margin-left: auto;
+}
+@media (max-width: 1199px) {
+  .sport__info {
+    max-width: 385px;
+  }
+}
+@media (max-width: 767px) {
+  .sport__info {
+    max-width: none;
+    padding-bottom: 40px;
+  }
+}
+.sport__title {
+  margin: 0px 0px 50px 0px;
+}
+.sport__content {
+  margin: 0;
+  font-size: 24px;
+  line-height: 130%;
+}
+.sport__content span {
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  .sport__content {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .sport__content {
+    font-size: 20px;
+  }
+}
+.sport__img {
+  position: absolute;
+  display: block;
+  width: 860px;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+@media (max-width: 1679px) {
+  .sport__img {
+    width: 650px;
+  }
+}
+@media (max-width: 1439px) {
+  .sport__img {
+    width: 580px;
+  }
+}
+@media (max-width: 1199px) {
+  .sport__img {
+    width: 55%;
+  }
+}
+@media (max-width: 992px) {
+  .sport__img {
+    width: 43%;
+  }
+}
+@media (max-width: 767px) {
+  .sport__img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+.sport__bottom {
+  padding: 200px 0px;
+  background-color: var(--green-3);
+  color: var(--gray-1);
+}
+@media (max-width: 1439px) {
+  .sport__bottom {
+    padding: 150px 0px;
+  }
+}
+@media (max-width: 1199px) {
+  .sport__bottom {
+    padding: 120px 0px;
+  }
+}
+@media (max-width: 992px) {
+  .sport__bottom {
+    padding: 90px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .sport__bottom {
+    padding: 75px 0px 55px 0px;
+  }
+}
+.sport__bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+@media (max-width: 992px) {
+  .sport__bottom-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.sport__bottom-content {
+  margin: 0;
+  max-width: 845px;
+  font-size: 40px;
+  line-height: 120%;
+}
+@media (max-width: 1199px) {
+  .sport__bottom-content {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .sport__bottom-content {
+    font-size: 26px;
+  }
+}
+.sport__bottom-btn {
+  display: inline-block;
+  max-width: 390px;
+  width: 100%;
+}
+@media (max-width: 479px) {
+  .sport__bottom-btn {
+    max-width: none;
+    text-align: center;
   }
 }
 

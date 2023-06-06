@@ -47,3 +47,29 @@
     color: var(--blue-2);
   }
 }
+.btn-fill {
+  padding: 24px 64px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  @include tablet {
+    padding: 16px 32px;
+    font-size: 22px;
+  }
+  @include mobile {
+    font-size: 20px;
+  }
+  &.btn-peach {
+    color: var(--gray-1);
+    background-color: var(--peach-3);
+    @include hover {
+      color: var(--dark-purple);
+      background-color: var(--peach-1);
+    }
+    &:active {
+      background-color: var(--peach-3);
+    }
+  }
+}
