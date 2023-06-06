@@ -1,0 +1,73 @@
+.about-festival {
+  position: relative;
+  padding-top: 170px;
+  @media (max-width: 1799px) {
+    background-size: 600px 100%;
+  }
+  @include desktop {
+    padding-top: 120px;
+  }
+  @include laptop {
+    padding-top: 100px;
+  }
+  @include tablet {
+    padding-top: 80px;
+  }
+  &__img {
+    position: absolute;
+    width: 750px;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+    @media (max-width: 1799px) {
+      width: 650px;
+    }
+    @include desktop {
+      width: 480px;
+    }
+    @include laptop {
+      width: 400px;
+    }
+    @include laptop-min {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__info {
+    max-width: 670px;
+    margin-left: auto;
+    margin: 0px 140px 0px auto;
+    @media (max-width: 1599px) {
+      margin-right: 0;
+    }
+    @include laptop {
+      max-width: 535px;
+    }
+    @include laptop-min {
+      max-width: none;
+      margin-bottom: 40px;
+    }
+  }
+  &__title {
+    margin: 0px 0px 50px 0px;
+    @include laptop {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 130%;
+    @include laptop {
+      font-size: 22px;
+    }
+    @include tablet {
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+}
