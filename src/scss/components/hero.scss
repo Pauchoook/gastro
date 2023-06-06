@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  padding: 185px 0px 105px 0px;
+  color: var(--gray-1);
+  background-color: var(--dark-purple);
+  z-index: 1;
+  @include desktop {
+    padding: 140px 0px 100px 0px;
+  }
+  @include tablet {
+    padding: 95px 0px 60px 0px;
+  }
+  &__bg {
+    position: absolute;
+    width: 1045px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    @include desktop {
+      width: 880px;
+    }
+    @include tablet {
+      width: 620px;
+    }
+    @media (max-width: 479px) {
+      width: 360px;
+      bottom: 340px;
+    }
+  }
+  &__title {
+    max-width: 810px;
+    margin: 0px 0px 35px 0px;
+    font-size: 128px;
+    line-height: 100%;
+    @include laptop {
+      font-size: 90px;
+    }
+    @include tablet {
+      font-size: 68px;
+    }
+    @include mobile {
+      font-size: 56px;
+    }
+    @media (max-width: 479px) {
+      margin-bottom: 325px;
+    }
+  }
+  &__subtitle {
+    margin: 0px 0px 10px 0px;
+    font-size: 48px;
+    line-height: 120%;
+    @include laptop {
+      font-size: 40px;
+    }
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 40px;
+    line-height: 120%;
+    margin: 0px 0px 55px 0px;
+    @include laptop {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+    @include tablet {
+      font-size: 26px;
+    }
+    @include mobile {
+      font-size: 20px;
+      line-height: 100%;
+    }
+  }
+  &__location-icon {
+    width: 32px;
+    height: 32px;
+    @include mobile {
+      width: 18px;
+      height: 22px;
+    }
+  }
+  &__nav-wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 18px;
+  }
+  &__btn {
+    display: inline-block;
+    padding-right: 70px;
+    padding-left: 70px;
+    color: var(--dark-purple);
+  }
+  &__social {
+    display: flex;
+    column-gap: 25px;
+    @include mobile {
+      column-gap: 16px
+    }
+  }
+  &__social-btn {
+    @include flex-center;
+    width: 85px;
+    height: 85px;
+    border: 3px solid var(--gray-1);
+    transition: ease, background-color 0.2s ease;
+    @include hover {
+      background-color: var(--gray-1);
+      color: var(--dark-purple);
+    }
+    @include laptop {
+      width: 68px;
+      height: 68px;
+    }
+    @include mobile {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  &__social-icon {
+    width: 40px;
+    height: 40px;
+    @include laptop {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__subcontent {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    @include mobile {
+      display: none;
+    }
+  }
+}
