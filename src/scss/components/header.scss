@@ -27,8 +27,13 @@
     padding: 15px 0px;
   }
   &__container {
+    --content-width: 1370px;
+    --offset-width: 30px;
+    --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+
     display: flex;
     align-items: center;
+    // max-width: ;
   }
   &__logo {
     max-width: 200px;

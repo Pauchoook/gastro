@@ -1,0 +1,116 @@
+.for-whom {
+  padding: 160px 0px;
+  background-color: var(--gray-2);
+  @include laptop {
+    padding: 120px 0px;
+  }
+  @include tablet {
+    padding: 80px 0px;
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 65px 0px;
+    @include laptop-min {
+      margin-bottom: 45px;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__wrapper {
+    @include betwen-stretch;
+    @include laptop-min {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      gap: 16px;
+    }
+  }
+  &__item {
+    padding: 48px 56px;
+    flex: 0 1 calc(100% / 3 - 50px / 3);
+    color: var(--gray-1);
+    transition: transform 0.2s ease;
+    &:first-child {
+      background-color: var(--green-3);
+    }
+    &:nth-child(2) {
+      background-color: var(--peach-3);
+    }
+    &:last-child {
+      background-color: var(--blue-3);
+    }
+    @include hover {
+      transform: translateY(-15px);
+    }
+    @include desktop {
+      padding: 40px;
+    }
+    @include laptop {
+      flex-basis: calc(100% / 3 - 10px);
+      padding: 32px;
+    }
+    @include laptop-min {
+      flex-basis: calc(50% - 10px);
+    }
+    @include tablet {
+      flex: auto;
+      width: 100%;
+    }
+  }
+  &__item-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+    @include laptop {
+      width: 55px;
+      height: 55px;
+      margin-bottom: 16px;
+    }
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__item-title {
+    max-width: 85%;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    margin: 0px 0px 40px 0px;
+    @include laptop {
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+  &__list-item {
+    font-size: 24px;
+    line-height: 120%;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    @include desktop {
+      font-size: 22px;
+    }
+    @include laptop {
+      font-size: 20px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    @include tablet {
+      font-size: 16px;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
