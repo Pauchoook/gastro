@@ -2791,6 +2791,103 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   }
 }
 
+.contacts {
+  position: relative;
+  padding: 120px 0px;
+  color: var(--gray-1);
+  background-color: var(--blue-3);
+  z-index: 1;
+}
+.contacts::before {
+  position: absolute;
+  content: "";
+  width: 517px;
+  height: 471px;
+  background: url("../img/pictures/mechanism.png") 0 0/100% 100% no-repeat;
+  top: 37px;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .contacts {
+    padding: 100px 0px;
+  }
+  .contacts::before {
+    width: 443px;
+    height: 403px;
+  }
+}
+@media (max-width: 992px) {
+  .contacts::before {
+    width: 336px;
+    height: 306px;
+    top: auto;
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding: 80px 0px 345px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts::before {
+    width: 257px;
+    height: 225px;
+    bottom: 85px;
+  }
+}
+.contacts__title {
+  margin: 0px 0px 25px 0px;
+  color: inherit;
+}
+.contacts__content {
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0px 0px 35px 0px;
+}
+@media (max-width: 1199px) {
+  .contacts__content {
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__content {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.contacts__btn {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  transition: color 0.2s ease;
+}
+@media (any-hover: hover) {
+  .contacts__btn:hover {
+    color: var(--green-2);
+  }
+}
+.contacts__btn:active {
+  color: var(--green-1);
+}
+@media (max-width: 1199px) {
+  .contacts__btn {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__btn {
+    font-size: 24px;
+  }
+}
+
 .header {
   position: fixed;
   left: 0;
