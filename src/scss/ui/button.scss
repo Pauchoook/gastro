@@ -61,7 +61,7 @@
   @include mobile {
     font-size: 20px;
   }
-  &.btn-peach {
+  &.btn-red {
     color: var(--gray-1);
     background-color: var(--peach-3);
     @include hover {
@@ -70,6 +70,30 @@
     }
     &:active {
       background-color: var(--peach-3);
+    }
+  }
+  &.btn-peach {
+    color: var(--ark-purple);
+    background-color: var(--peach-1);
+    @include hover {
+      color: var(--gray-1);
+      background-color: var(--peach-3);
+    }
+    &:active {
+      color: var(--gray-3);
+      background-color: var(--peach-3);
+    }
+  }
+  &.btn-blue {
+    color: var(--dark-purple);
+    background-color: var(--blue-1);
+    @include hover {
+      color: var(--gray-1);
+      background-color: var(--blue-3);
+    }
+    &:active {
+      color: var(--gray-3);
+      background-color: var(--blue-3);
     }
   }
 }

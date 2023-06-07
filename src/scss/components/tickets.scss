@@ -1,0 +1,181 @@
+.tickets {
+  padding: 170px 0px;
+  background-color: var(--gray-2);
+  @include desktop {
+    padding: 120px 0px;
+  }
+  @include laptop {
+    padding: 100px 0px;
+  }
+  @include tablet {
+    padding: 60px 0px;
+  }
+  @include mobile {
+    padding: 45px 0px 55px 0px;
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+    @include tablet {
+      margin-bottom: 35px;
+    }
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0px 0px 75px 0px;
+    span {
+      font-weight: 600;
+    }
+    @include laptop {
+      font-size: 20px;
+      margin-bottom: 45px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    @include tablet {
+      flex-direction: column;
+      row-gap: 35px;
+    }
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(50% - 15px);
+    padding: 130px 0px 80px 0px;
+    border: 1px solid var(--blue-2);
+    border-radius: 10px;
+    background-color: white;
+    transition: box-shadow 0.2s ease;
+    z-index: 1;
+    &--vip {
+      .tickets__item-title {
+        color: var(--peach-4);
+      }
+    }
+    @include hover {
+      box-shadow: 0px 4px 47px -2px rgba(0, 0, 0, 0.25);
+    }
+    @include laptop {
+      padding-bottom: 70px;
+    }
+    @include laptop-min {
+      padding-bottom: 40px;
+      flex-basis: calc(50% - 10px);
+    }
+    @include tablet {
+      flex: auto;
+      width: 100%;
+      min-height: 680px;
+    }
+  }
+  &__item-icon {
+    position: absolute;
+    width: 175px;
+    height: auto;
+    top: 10px;
+    right: 100px;
+    z-index: -1;
+    @include laptop {
+      width: 150px;
+    }
+    @include laptop-min {
+      top: 35px;
+      right: 20px;
+    }
+  }
+  &__item-info {
+    flex: 1;
+    padding: 0 45px;
+    @include laptop {
+      padding: 0 35px;
+    }
+    @include laptop-min {
+      padding: 0 22px;
+    }
+  }
+  &__item-title {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 120%;
+    color: var(--blue-2);
+    margin: 0px 0px 24px 0px;
+    @include desktop {
+      font-size: 64px;
+    }
+    @include laptop {
+      font-size: 54px;
+    }
+    @include laptop-min {
+      font-size: 44px;
+    }
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+  &__list {
+    margin-bottom: 45px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+  }
+  &__list-item {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__price-subtitle {
+    display: block;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--blue-2);
+  }
+  &__price-content {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--blue-2);
+    margin: 0px 0px 30px 0px;
+    @include laptop {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+    @include tablet {
+      font-size: 32px;
+    }
+    @include mobile {
+      span {
+        display: none;
+      }
+    }
+  }
+  &__item-btn {
+    display: inline-block;
+    width: fit-content;
+    margin-left: 45px;
+    @include laptop {
+      margin-left: 35px;
+    }
+    @include laptop-min {
+      margin-left: 22px;
+    }
+    @media (max-width: 479px) {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}
