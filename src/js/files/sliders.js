@@ -16,4 +16,18 @@ export default function sliders() {
       });
     });
   }
+
+  const massMediaSlider = document.querySelector(".mass-media__slider");
+  if (massMediaSlider) {
+    const swiper = new Swiper(massMediaSlider, {
+      speed: 700,
+      simulateTouch: false,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: " .mass-media__slider-btn--next",
+        prevEl: " .mass-media__slider-btn--prev",
+      },
+    });
+  }
 }

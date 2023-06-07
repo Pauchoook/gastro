@@ -35,6 +35,10 @@
     grid-column: 4 span;
     padding: 32px 40px;
     background-color: white;
+    transition: transform 0.2s ease;
+    @include hover {
+      transform: translateY(-15px);
+    }
     @include laptop-min {
       grid-column: 6 span;
     }
