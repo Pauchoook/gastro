@@ -28,6 +28,22 @@ export default function sliders() {
         nextEl: " .mass-media__slider-btn--next",
         prevEl: " .mass-media__slider-btn--prev",
       },
+      breakpoints: {
+        1440: {
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 3
+        },
+        577: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        }
+      }
     });
   }
 }

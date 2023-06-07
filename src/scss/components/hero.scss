@@ -106,8 +106,8 @@
   }
   &__social-btn {
     @include flex-center;
-    width: 85px;
-    height: 85px;
+    width: 86px;
+    height: 86px;
     border: 3px solid var(--gray-1);
     transition: ease, background-color 0.2s ease;
     @include hover {

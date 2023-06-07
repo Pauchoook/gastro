@@ -9,6 +9,11 @@
   width: 100%;
   padding: 0 var(--offset-width);
   margin: 0 auto;
+  &._big {
+    --content-width: 1430px;
+    --offset-width: 30px;
+    --container-width: calc(var(--content-width) + (var(--offset-width) * 2));
+  }
   @include tablet {
     max-width: none;
     padding: 0 15px;
