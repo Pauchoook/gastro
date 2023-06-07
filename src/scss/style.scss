@@ -11,6 +11,11 @@
 @import "./ui/button";
 @import "./ui/list";
 @import "./ui/title";
+@import "./ui/tab";
+@import "./ui/map";
+
+// mini-components
+@import "./mini-components/video-player";
 
 // components
 @import "./components/footer";
@@ -22,5 +27,8 @@
 @import "./components/sport";
 @import "./components/tickets";
 @import "./components/will-get";
+@import "./components/road";
+@import "./components/video-fest";
+@import "./components/mass-media";
 
 @import "./components/header";

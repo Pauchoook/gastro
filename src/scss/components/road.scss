@@ -1,0 +1,122 @@
+.road {
+  padding: 160px 0px;
+  @include desktop {
+    padding: 120px 0px;
+  }
+  @include laptop {
+    padding: 100px 0px;
+  }
+  @include tablet {
+    padding: 80px 0px;
+  }
+  &__title {
+    margin: 0px 0px 65px 0px;
+    text-align: center;
+    @include laptop {
+      margin-bottom: 50px;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__buttons {
+    max-width: 1145px;
+    display: flex;
+    margin: 0px auto 40px auto;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+    @include mobile {
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    flex: 0 1 calc(100% / 3);
+    padding-bottom: 20px;
+    border-bottom: 4px solid var(--gray-3);
+    transition: color 0.2s ease, border-color 0.2s ease;
+    &.active {
+      color: var(--peach-3);
+      border-color: var(--peach-3);
+    }
+    @include hover {
+      color: var(--peach-3);
+    }
+    @include laptop {
+      font-size: 28px;
+    }
+    @include laptop-min {
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 20px;
+      padding-bottom: 5px;
+    }
+    @include mobile {
+      flex: auto;
+      white-space: nowrap;
+      padding: 0px 8px 5px 8px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  &__wrapper {
+    @include flex-between;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1100px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    max-width: 340px;
+    @include tablet {
+      max-width: none;
+    }
+  }
+  &__content {
+    margin: 0;
+    font-size: 24px;
+    line-height: 130%;
+    span {
+      color: var(--peach-3);
+    }
+    @include laptop {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__map {
+    width: 670px;
+    height: 480px;
+    @include laptop {
+      width: 550px;
+      height: 395px;
+    }
+    @include laptop-min {
+      width: 50%;
+      height: 370px;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @media (max-width: 479px) {
+      height: 320px;
+    }
+  }
+}
