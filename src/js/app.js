@@ -1,4 +1,5 @@
 import burger from "./files/burger.js";
+import changeNumber from "./files/change-number.js";
 import * as flsFunctions from "./files/functions.js";
 import headerScroll from "./files/headaer-scroll.js";
 import maps from "./files/maps.js";
@@ -16,3 +17,4 @@ tab();
 maps();
 videos();
 smoothScroll();
+changeNumber();

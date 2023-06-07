@@ -1,0 +1,153 @@
+.form {
+  &__parent-number {
+    @include flex-between;
+    margin-bottom: 35px;
+    border: 1px solid var(--gray-1);
+  }
+  &__item {
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__number-btn {
+    @include flex-center;
+    width: 77px;
+    height: 77px;
+    font-size: 32px;
+    line-height: 120%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    span {
+      position: absolute;
+      width: 16px;
+      height: 2px;
+      background-color: currentColor;
+    }
+    &--plus {
+      span {
+        &:last-child {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    @include laptop {
+      width: 65px;
+      height: 65px;
+    }
+    @include tablet {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__input {
+    border: 1px solid var(--gray-1);
+    color: inherit;
+    outline: none;
+    border-radius: 0;
+    background-color: transparent;
+
+    width: 100%;
+    padding: 12px;
+    font-size: 24px;
+    line-height: 120%;
+    &--number {
+      flex: 1;
+      border: none;
+      font-size: 32px;
+      text-align: center;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    @include laptop {
+      font-size: 20px;
+      &--number {
+        font-size: 24px;
+      }
+    }
+  }
+  &__label {
+    display: block;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 8px;
+  }
+  &__transfer {
+    margin: 35px 0px;
+    @include tablet {
+      margin: 0px 0px 30px 0px;
+    }
+  }
+  &__transfer-content {
+    font-size: 16px;
+    line-height: 120%;
+    margin: 0px 0px 8px 0px;
+  }
+  &__transfer-radio {
+    display: none;
+    &:checked + label {
+      background-color: var(--gray-1);
+      color: var(--dark-purple);
+    }
+  }
+  &__transfer-wrapper {
+    display: flex;
+  }
+  &__transfer-btn {
+    display: block;
+    cursor: pointer;
+    border: 1px solid var(--gray-1);
+    padding: 16px;
+    flex: 0 1 50%;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    @include hover {
+      background-color: var(--gray-1);
+      color: var(--dark-purple);
+    }
+    @include tablet {
+      padding: 14px;
+      font-size: 16px;
+    }
+  }
+  &__input-check {
+    display: none;
+    &:checked + label {
+      &::before {
+        background-color: var(--gray-1);
+      }
+    }
+  }
+  &__label-check {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    max-width: 480px;
+    padding-left: 28px;
+    font-size: 13px;
+    line-height: 120%;
+    &::before {
+      position: absolute;
+      content: "";
+      border: 1px solid var(--gray-1);
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+    }
+    a {
+      color: var(--blue-1);
+      text-decoration: underline;
+    }
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}

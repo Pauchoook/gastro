@@ -1,0 +1,134 @@
+<section class="buy-ticket">
+  <div class="container">
+    <h2 class="title-2 buy-ticket__title">
+      Вы у финиша! Чтобы зарегистрироваться, ответьте на несколько вопросов.
+    </h2>
+    <p class="buy-ticket__content"><span>*</span> обязательны ответы</p>
+    <div class="buy-ticket__wrapper">
+      <div class="buy-ticket__item">
+        <img src="@img/pictures/tickets-1.png" alt="Билет" class="buy-ticket__item-icon" />
+        <h3 class="buy-ticket__item-title">Стандартный билет</h3>
+        <span class="buy-ticket__price-subtitle">Цена</span>
+        <p class="buy-ticket__price-content">0 руб. (регистрация обязательна)</p>
+        <form action="#" class="form buy-ticket__item-form">
+          <div class="form__parent-number">
+            <button type="button" class="btn form__number-btn form__number-btn--minus">
+              <span></span>
+            </button>
+            <input type="number" name="number" value="1" class="form__input form__input--number" />
+            <button type="button" class="btn form__number-btn form__number-btn--plus">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="form__item">
+            <label for="family-name" class="form__label">Фамилия и Имя*</label>
+            <input type="text" name="family-name" id="family-name" class="form__input" />
+          </div>
+          <div class="form__item">
+            <label for="tel" class="form__label">Номер телефона*</label>
+            <input type="tel" name="tel" id="tel" class="form__input" />
+          </div>
+          <div class="form__item">
+            <label for="email" class="form__label">Ваша почта*</label>
+            <input type="email" name="email" id="email" class="form__input" />
+          </div>
+          <div class="form__item">
+            <label for="city" class="form__label">Из какого вы города?*</label>
+            <input type="text" name="city" id="city" class="form__input" />
+          </div>
+          <div class="form__transfer">
+            <p class="form__transfer-content">Может ли вам понадобиться трансфер?</p>
+            <div class="form__transfer-wrapper">
+              <input
+                type="radio"
+                name="transfer"
+                value="transfer-yes"
+                id="transfer-yes"
+                checked
+                class="form__transfer-radio"
+              />
+              <label for="transfer-yes" class="form__transfer-btn">Да</label>
+              <input
+                type="radio"
+                name="transfer"
+                value="transfer-no"
+                id="transfer-no"
+                class="form__transfer-radio"
+              />
+              <label for="transfer-no" class="form__transfer-btn">Нет</label>
+            </div>
+          </div>
+          <input type="checkbox" id="politic-standart" class="form__input-check" />
+          <label for="politic-standart" class="form__label-check"
+            >Я ознакомился с <a href="#" target="_blank">политикой конфиденциальности</a> и даю
+            согласие на обработку персональных данных</label
+          >
+          <button type="submit" class="btn btn-fill btn-blue buy-ticket__item-btn">Зарегестрироваться</button>
+        </form>
+      </div>
+      <div class="buy-ticket__item buy-ticket__item--vip">
+        <img src="@img/pictures/tickets-2.png" alt="Билет" class="buy-ticket__item-icon" />
+        <h3 class="buy-ticket__item-title">VIP- <br> Билет</h3>
+        <span class="buy-ticket__price-subtitle">Цена</span>
+        <p class="buy-ticket__price-content">0 руб. (регистрация обязательна)</p>
+        <form action="#" class="form buy-ticket__item-form">
+          <div class="form__parent-number">
+            <button type="button" class="btn form__number-btn form__number-btn--minus">
+              <span></span>
+            </button>
+            <input type="number" name="number" value="1" class="form__input form__input--number" />
+            <button type="button" class="btn form__number-btn form__number-btn--plus">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="form__item">
+            <label for="family-name" class="form__label">Фамилия и Имя*</label>
+            <input type="text" name="family-name" id="family-name" class="form__input" />
+          </div>
+          <div class="form__item">
+            <label for="tel" class="form__label">Номер телефона*</label>
+            <input type="tel" name="tel" id="tel" class="form__input" />
+          </div>
+          <div class="form__item">
+            <label for="email" class="form__label">Ваша почта*</label>
+            <input type="email" name="email" id="email" class="form__input" />
+          </div>
+          <div class="form__item">
+            <label for="city" class="form__label">Из какого вы города?*</label>
+            <input type="text" name="city" id="city" class="form__input" />
+          </div>
+          <div class="form__transfer">
+            <p class="form__transfer-content">Может ли вам понадобиться трансфер?</p>
+            <div class="form__transfer-wrapper">
+              <input
+                type="radio"
+                name="transfer"
+                value="transfer-yes"
+                id="transfer-yes"
+                checked
+                class="form__transfer-radio"
+              />
+              <label for="transfer-yes" class="form__transfer-btn">Да</label>
+              <input
+                type="radio"
+                name="transfer"
+                value="transfer-no"
+                id="transfer-no"
+                class="form__transfer-radio"
+              />
+              <label for="transfer-no" class="form__transfer-btn">Нет</label>
+            </div>
+          </div>
+          <input type="checkbox" id="politic-vip" class="form__input-check" />
+          <label for="politic-vip" class="form__label-check"
+            >Я ознакомился с <a href="#" target="_blank">политикой конфиденциальности</a> и даю
+            согласие на обработку персональных данных</label
+          >
+          <button type="submit" class="btn btn-fill btn-peach buy-ticket__item-btn">Зарегестрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

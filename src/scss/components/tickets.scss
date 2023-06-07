@@ -56,7 +56,9 @@
     transition: box-shadow 0.2s ease;
     z-index: 1;
     &--vip {
-      .tickets__item-title {
+      .tickets__item-title,
+      .tickets__price-subtitle,
+      .tickets__price-content {
         color: var(--peach-4);
       }
     }
