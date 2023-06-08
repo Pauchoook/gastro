@@ -1,6 +1,6 @@
 .about-festival {
   position: relative;
-  padding-top: 170px;
+  padding: 170px 0px 30px 0px;
   &::after {
     position: absolute;
     content: "";
@@ -9,6 +9,7 @@
     background: url('../img/icons/pentagon.svg') 0 0 / 100% 100% no-repeat;
     right: 0;
     bottom: -140px;
+    z-index: 10;
   }
   @media (max-width: 1799px) {
     background-size: 600px 100%;
@@ -81,6 +82,7 @@
     }
   }
   &__content {
+    margin: 0;
     font-size: 24px;
     line-height: 130%;
     @include laptop {

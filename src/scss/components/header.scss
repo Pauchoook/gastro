@@ -67,7 +67,7 @@
     }
   }
   &__switch-link {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 18px;
     line-height: 120%;
     color: var(--gray-3);
@@ -85,6 +85,11 @@
     width: 30px;
     height: 11px;
     border: 2px solid var(--gray-2);
+    &._partners {
+      &::after {
+        right: calc(100% - (15px - 2px));
+      }
+    }
     &::after {
       position: absolute;
       content: "";
@@ -93,6 +98,7 @@
       background-color: var(--gray-2);
       right: -2px;
       top: -4px;
+      transition: right 0.2s ease;
     }
   }
   &__nav {

@@ -85,15 +85,26 @@
     }
   }
   &.btn-blue {
-    color: var(--dark-purple);
+    color: var(--gray-1);
     background-color: var(--blue-1);
     @include hover {
-      color: var(--gray-1);
       background-color: var(--blue-3);
     }
     &:active {
       color: var(--gray-3);
       background-color: var(--blue-3);
+    }
+  }
+  &.btn-green {
+    color: var(--gray-1);
+    background-color: var(--green-3);
+    @include hover {
+      color: var(--dark-purple);
+      background-color: var(--green-1);
+    }
+    &:active {
+      background-color: var(--green-3);
+      color: var(--gray-3);
     }
   }
 }

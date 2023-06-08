@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/logos/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Gastro</title>
+</head>
+
+<body class="body">
+    <header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="header__logo">
+      <img src="img/logos/logo.png" alt="" class="header__logo-img" />
+    </a>
+    <a href="buy-ticket.html" data-da=".header__nav, 992, 2" class="btn-stroke header__btn">Забрать билет</a>
+    <div data-da=".header__nav, 992, 0" class="header__switch" id="partners-nav">
+      <a href="partners.html" class="header__switch-link header__switch-link--partners">
+        Партнёрам
+      </a>
+      <button class="btn header__switch-btn"></button>
+      <a href="index.html" class="header__switch-link header__switch-link--users"
+      >Посетителям
+      </a>
+    </div>
+    <nav class="header__nav" id="burger-menu">
+      <ul class="list header__nav-list">
+        <li>
+          <a href="#about">О фестивале</a>
+        </li>
+        <li>
+          <a href="#program">Программа</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn header__burger-btn" id="burger-btn">
+      <span class="header__burger-btn-line"></span>
+      <span class="header__burger-btn-line"></span>
+      <span class="header__burger-btn-line"></span>
+    </button>
+  </div>
+</header>
+
+
+    <main>
+        <section class="hero hero--partners">
+  <div class="container">
+    <img src="img/pictures/hero.png" class="hero__bg hero__bg--partners">
+    <h1 class="hero__title hero__title--partners">GASTRO INDUSTRY FESTIVAL</h1>
+    <h2 class="hero__subtitle">27 августа 2023</h2>
+    <p class="hero__location">
+      <svg class="hero__location-icon">
+        <use xlink:href="img/icons/icons.svg#icon-location"></use>
+      </svg>
+      Никель
+    </p>
+    <div class="hero__nav-wrapper hero__nav-wrapper--partners">
+      <a href="#" class="btn-white hero__btn hero__btn--min">Аккредитация</a>
+      <a href="#" class="btn-white hero__btn hero__btn--min">Стать партнёром</a>
+      <a href="#" class="btn-white hero__btn hero__btn--min">Стать волонтёром</a>
+    </div>
+  </div>
+</section>
+
+        <section class="about-festival" id="about">
+  <div class="container">
+    <div class="about-festival__info">
+      <h2 class="title-2 about-festival__title">О фестивале</h2>
+      <p class="about-festival__content">
+        Gastro Industry Fest — это соединение суровых развлечений, гастрономических открытий,
+        северного колорита и спорта. <br />
+        <br />
+        Фестиваль ежегодно собирает больше двух тысяч посетителей, место проведения — Никель,
+        колоритный город за полярным кругом. <br />
+        <br />
+        Мы готовим крутую программу с индустриальными шоу, технологическими мастер-классами,
+        гастрономическими шоу, арт-объектами, музыкой и танцами <br />
+        <br />
+        В этом году фестиваль станет бесплатный, чтобы ещё больше жителей и гостей города смогло
+        погрузиться в калейдоскоп Севера.
+      </p>
+    </div>
+  </div>
+  <img src="img/pictures/festival.jpg" alt="Фестиваль" class="about-festival__img" />
+</section>
+
+        <section class="program" id="program">
+  <div class="container">
+    <h2 class="title-2 program__title">Программа</h2>
+    <p class="program__content">Фестиваль — это три кластера активностей</p>
+    <div class="program__wrapper">
+      <div class="program__item">
+        <span class="program__item-subtitle">зона</span>
+        <h4 class="program__item-title">Gastro</h4>
+        <ul class="list">
+          <li class="program__list-item">кулинарные мастер-классы</li>
+          <li class="program__list-item">фудкорт</li>
+          <li class="program__list-item">дегустации</li>
+        </ul>
+      </div>
+      <div class="program__item">
+        <span class="program__item-subtitle">зона</span>
+        <h4 class="program__item-title">INDUSTRY</h4>
+        <ul class="list">
+          <li class="program__list-item">техно-аттракционы</li>
+          <li class="program__list-item">ярмарка мастеров</li>
+        </ul>
+      </div>
+      <div class="program__item">
+        <span class="program__item-subtitle">зона</span>
+        <h4 class="program__item-title">FEST</h4>
+        <ul class="list">
+          <li class="program__list-item">шоу дронов</li>
+          <li class="program__list-item">спортивные активности</li>
+          <li class="program__list-item">лекторий</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="search-partners">
+  <div class="container">
+    <h2 class="title-2 search-partners__title">Мы ищем партнёров</h2>
+    <ul class="list search-partners__list">
+      <li class="search-partners__list-item">
+        <svg class="search-partners__list-icon">
+          <use xlink:href="img/icons/icons.svg#icon-arrow-decor"></use>
+        </svg>
+        <span>В сфере HoReCa</span>
+      </li>
+      <li class="search-partners__list-item">
+        <svg class="search-partners__list-icon">
+          <use xlink:href="img/icons/icons.svg#icon-arrow-decor"></use>
+        </svg>
+        <span>В сфере развлечений и event-ов</span>
+      </li>
+    </ul>
+    <p class="search-partners__content">
+      Если вы хотите сотрудничать с нами, то подайте заявку, мы с вами свяжемся
+    </p>
+    <a href="#" class="btn btn-fill btn-green search-partners__btn">Стать партнёром</a>
+  </div>
+  <img src="img/pictures/partners.jpg" alt="Изображение" class="search-partners__img" />
+</section>
+
+        <section class="video-fest">
+  <div class="container">
+    <h2 class="title-2 video-fest__title">Gastro Industry Fest 2022</h2>
+  </div>
+  <div class="video-fest__parent-player">
+    <div class="video-player video-fest__player">
+      <video
+        src="./files/fest.mp4"
+        poster="img/pictures/poster.jpg"
+        class="video-player__video"
+      ></video>
+      <button class="btn video-player__btn">
+        <svg class="video-player__icon">
+          <use xlink:href="img/icons/icons.svg#icon-play"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+        <section class="volunteer">
+  <div class="container">
+    <div class="volunteer__info">
+      <h2 class="title-2 volunteer__title">Стать волонтёром</h2>
+      <p class="volunteer__content">
+        Хотите быть частью Gastro Industry Fest? <br />
+        Записывайтесь в ряды волонтёров!
+      </p>
+      <ul class="list volunteer__list">
+        <li class="volunteer__list-item">
+          <svg class="volunteer__list-icon">
+            <use xlink:href="img/icons/icons.svg#icon-arrow-decor"></use>
+          </svg>
+          <span>На поддержку порядка на фестивале</span>
+        </li>
+        <li class="volunteer__list-item">
+          <svg class="volunteer__list-icon">
+            <use xlink:href="img/icons/icons.svg#icon-arrow-decor"></use>
+          </svg>
+          <span>Помощь гостям</span>
+        </li>
+        <li class="volunteer__list-item">
+          <svg class="volunteer__list-icon">
+            <use xlink:href="img/icons/icons.svg#icon-arrow-decor"></use>
+          </svg>
+          <span>Помощь в организации активностей</span>
+        </li>
+      </ul>
+      <p class="volunteer__subcontent">Заявки принимаются до 15 августа</p>
+      <a href="#" class="btn-fill btn-blue volunteer__btn">Стать волонтёром</a>
+    </div>
+  </div>
+  <img src="img/pictures/volunteer.jpg" alt="Изображение" class="volunteer__img" />
+</section>
+
+        <section class="mass-media">
+  <div class="container _big">
+    <h2 class="title-2 mass-media__title">СМИ о нас</h2>
+    <div class="mass-media__slider-nav">
+      <button class="btn mass-media__slider-btn mass-media__slider-btn--prev">
+        <svg class="mass-media__slider-btn-icon">
+          <use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+        </svg>
+      </button>
+      <button class="btn mass-media__slider-btn mass-media__slider-btn--next">
+        <svg class="mass-media__slider-btn-icon">
+          <use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="swiper mass-media__slider">
+      <div class="swiper-wrapper">
+        <a href="#" class="swiper-slide mass-media__slide">
+          <img src="img/pictures/mass-media.jpg" alt="Изображение" class="mass-media__slide-img" />
+          <span class="mass-media__slide-tag">#Вокруг севера</span>
+          <h5 class="mass-media__slide-title">Самый северный фестиваль</h5>
+          <p class="mass-media__slide-content">
+            Gastro Industry Fest проводится в городе Никель на Кольском полуострове в Мурманской
+            области wfewfe wewfew fewf ewfe wfewf wefewfewf fwefewf wefwef
+          </p>
+        </a>
+        <a href="#" class="swiper-slide mass-media__slide">
+          <img src="img/pictures/mass-media.jpg" alt="Изображение" class="mass-media__slide-img" />
+          <span class="mass-media__slide-tag">#Вокруг севера</span>
+          <h5 class="mass-media__slide-title">Самый северный фестиваль</h5>
+          <p class="mass-media__slide-content">
+            Gastro Industry Fest проводится в городе Никель на Кольском полуострове в Мурманской
+            области wfewfe wewfew fewf ewfe wfewf wefewfewf fwefewf wefwef
+          </p>
+        </a>
+        <a href="#" class="swiper-slide mass-media__slide">
+          <img src="img/pictures/mass-media.jpg" alt="Изображение" class="mass-media__slide-img" />
+          <span class="mass-media__slide-tag">#Вокруг севера</span>
+          <h5 class="mass-media__slide-title">Самый северный фестиваль</h5>
+          <p class="mass-media__slide-content">
+            Gastro Industry Fest проводится в городе Никель на Кольском полуострове в Мурманской
+            области wfewfe wewfew fewf ewfe wfewf wefewfewf fwefewf wefwef
+          </p>
+        </a>
+        <a href="#" class="swiper-slide mass-media__slide">
+          <img src="img/pictures/mass-media.jpg" alt="Изображение" class="mass-media__slide-img" />
+          <span class="mass-media__slide-tag">#Вокруг севера</span>
+          <h5 class="mass-media__slide-title">Самый северный фестиваль</h5>
+          <p class="mass-media__slide-content">
+            Gastro Industry Fest проводится в городе Никель на Кольском полуострове в Мурманской
+            области wfewfe wewfew fewf ewfe wfewf wefewfewf fwefewf wefwef
+          </p>
+        </a>
+        <a href="#" class="swiper-slide mass-media__slide">
+          <img src="img/pictures/mass-media.jpg" alt="Изображение" class="mass-media__slide-img" />
+          <span class="mass-media__slide-tag">#Вокруг севера</span>
+          <h5 class="mass-media__slide-title">Самый северный фестиваль</h5>
+          <p class="mass-media__slide-content">
+            Gastro Industry Fest проводится в городе Никель на Кольском полуострове в Мурманской
+            области wfewfe wewfew fewf ewfe wfewf wefewfewf fwefewf wefwef
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="accreditation">
+  <div class="container">
+    <h2 class="accreditation__title">
+      Вы фотограф, представитель СМИ или блогер от 1,5к подписчиков? Заполните форму и получите
+      аккредитацию.
+    </h2>
+    <a href="#" class="btn-fill accreditation__btn">Получить аккредитацию</a>
+    <p class="accreditation__subcontent">Укажите издание, город и количество человек.</p>
+  </div>
+</section>
+
+        <section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="title-2 contacts__title">Контакты</h2>
+    <p class="contacts__content">По всем интересующим вопросам свяжитесь с нами:</p>
+    <ul class="list contacts__list">
+      <li>
+        <a href="mailto:info@gastroindustry.ru" class="contacts__btn">info@gastroindustry.ru</a>
+      </li>
+      <li>
+        <a href="tel:79000000000" class="contacts__btn">+7 900 000 00 00</a>
+      </li>
+    </ul>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__left">
+      <ul class="list footer__sites">
+        <li class="footer__sites-item">
+          <div class="footer__sites-parent-img">
+            <img src="img/logos/nornikel.png" alt="Норникель" class="footer__sites-img" />
+          </div>
+          <a href="https://www.nornickel.ru/" class="footer__sites-btn">nornickel.ru</a>
+        </li>
+        <li class="footer__sites-item">
+          <div class="footer__sites-parent-img">
+            <img src="img/logos/school.png" alt="Школа" class="footer__sites-img" />
+          </div>
+          <a href="https://the2school.com/" class="footer__sites-btn">the2school.com</a>
+        </li>
+      </ul>
+      <a href="index.html" class="footer__logo">
+        <img src="img/logos/logo.png" alt="Логотип" class="footer__logo-img" />
+      </a>
+    </div>
+    <div class="footer__info">
+      <ul class="list footer__info-list">
+        <li>
+          <a href="#" target="_blank" class="footer__info-btn">Условия публичной оферты</a>
+        </li>
+        <li>
+          <a href="#" download class="footer__info-btn">Реквизиты компании</a>
+        </li>
+      </ul>
+      <p class="footer__info-content">© GASTRO INDUSTRY FESTIVAL, 2023</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+    type="text/javascript"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

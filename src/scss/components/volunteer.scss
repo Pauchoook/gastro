@@ -1,0 +1,148 @@
+.volunteer {
+  position: relative;
+  padding: 160px 0px;
+  @include desktop {
+    padding: 120px 0px;
+  }
+  @include laptop {
+    padding: 100px 0px; 
+  }
+  @include laptop-min {
+    padding-bottom: 0;
+  }
+  @include tablet {
+    padding-top: 80px;
+  }
+  &__info {
+    max-width: 730px;
+    margin-left: auto;
+    @include desktop {
+      max-width: 590px;
+    }
+    @include laptop {
+      max-width: 465px;
+    }
+    @include laptop-min {
+      max-width: none;
+      padding-bottom: 55px;
+    }
+  }
+  &__title {
+    margin: 0px 0px 15px 0px;
+  }
+  &__content {
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0px 0px 40px 0px;
+    @include desktop {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+  }
+  &__list {
+    margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__list-item {
+    display: flex;
+    column-gap: 30px;
+    font-size: 32px;
+    line-height: 120%;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    span {
+      max-width: calc(100% - 105px);
+    }
+    @include desktop {
+      column-gap: 15px;
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      span {
+        max-width: calc(100% - 65px);
+      }
+    }
+    @include laptop {
+      max-width: 465px;
+    }
+    @include laptop-min {
+      max-width: none;
+    }
+    @include tablet {
+      font-size: 24px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+      span {
+        max-width: calc(100% - 50px);
+      }
+    }
+  }
+  &__list-icon {
+    width: 75px;
+    height: 20px;
+    color: var(--blue-1);
+    transform: translateY(7px);
+    @include desktop {
+      width: 48px;
+      height: 12px;
+    }
+    @include tablet {
+      width: 34px;
+      height: 10px;
+      color: var(--green-2);
+    }
+  }
+  &__subcontent {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0px 0px 40px 0px;
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    @media (max-width: 479px) {
+      width: 100%;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    width: 725px;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    @media (max-width: 1679px) {
+      width: 620px;
+    }
+    @include desktop {
+      width: 550px;
+    }
+    @include laptop {
+      width: 470px;
+    }
+    @include laptop-min {
+      position: static;
+      width: 100%;
+      height: auto;
+      object-position: 0% 0%;
+      max-height: 555px;
+    }
+    @include tablet {
+      max-height: 400px;
+    }
+  }
+}

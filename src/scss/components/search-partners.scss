@@ -1,0 +1,167 @@
+.search-partners {
+  position: relative;
+  padding: 160px 0px;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 217px;
+    height: 198px;
+    background: url("../img/icons/dish.png") 0 0 / 100% 100% no-repeat;
+    top: -100px;
+    left: -45px;
+    z-index: -1;
+  }
+  @include desktop {
+    padding: 120px 0px;
+  }
+  @include laptop {
+    padding: 100px 0px;
+    &::before {
+      width: 165px;
+      height: 151px;
+      top: -40px;
+      left: -25px;
+    }
+  }
+  @include laptop-min {
+    padding: 100px 0px 0px 0px;
+  }
+  @include tablet {
+    padding-top: 80px;
+    &::before {
+      display: none;
+    }
+  }
+  @include mobile {
+    padding-top: 30px;
+  }
+  &__title {
+    margin: 0px 0px 55px 0px;
+    @include desktop {
+      max-width: 550px;
+    }
+    @include laptop-min {
+      max-width: none;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__list {
+    margin-bottom: 55px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__list-item {
+    display: flex;
+    column-gap: 30px;
+    font-size: 32px;
+    line-height: 120%;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    span {
+      max-width: calc(100% - 105px);
+    }
+    @include desktop {
+      column-gap: 15px;
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      span {
+        max-width: calc(100% - 65px);
+      }
+    }
+    @include laptop {
+      max-width: 465px;
+    }
+    @include laptop-min {
+      max-width: none;
+    }
+    @include tablet {
+      font-size: 24px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+      span {
+        max-width: calc(100% - 50px);
+      }
+    }
+  }
+  &__list-icon {
+    display: block;
+    height: 20px;
+    width: 75px;
+    color: var(--green-2);
+    transform: translateY(7px);
+    @include desktop {
+      width: 48px;
+      height: 12px;
+    }
+    @include tablet {
+      width: 34px;
+      height: 10px;
+    }
+  }
+  &__content {
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0px 0px 65px 0px;
+    @include desktop {
+      font-size: 20px;
+    }
+    @include laptop {
+      max-width: 465px;
+    }
+    @include laptop-min {
+      max-width: none;
+    }
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+    @include laptop-min {
+      margin-bottom: 55px;
+    }
+    @media (max-width: 479px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    width: 725px;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @media (max-width: 1679px) {
+      width: 620px;
+    }
+    @include desktop {
+      width: 535px;
+    }
+    @include laptop {
+      width: 470px;
+    }
+    @include laptop-min {
+      position: static;
+      width: 100%;
+      height: auto;
+      object-position: 0% 0%;
+      max-height: 555px;
+    }
+    @include tablet {
+      max-height: 400px;
+    }
+  }
+}

@@ -8,7 +8,7 @@
     padding: 140px 0px 100px 0px;
   }
   @include tablet {
-    padding: 95px 0px 60px 0px;
+    padding: 95px 0px 280px 0px;
   }
   &__bg {
     position: absolute;
@@ -25,6 +25,9 @@
     @media (max-width: 479px) {
       width: 360px;
       bottom: 340px;
+      &--partners {
+        bottom: 0;
+      }
     }
   }
   &__title {
@@ -44,6 +47,9 @@
     }
     @media (max-width: 479px) {
       margin-bottom: 325px;
+      &--partners {
+        margin-bottom: 40px;
+      }
     }
   }
   &__subtitle {
@@ -90,12 +96,36 @@
     flex-wrap: wrap;
     gap: 25px;
     margin-bottom: 18px;
+    @include tablet {
+      &--partners {
+        justify-content: center;
+      }
+    }
+    @include mobile {
+      &--partners {
+        gap: 8px;
+      }
+    }
   }
   &__btn {
     display: inline-block;
     padding-right: 70px;
     padding-left: 70px;
     color: var(--dark-purple);
+    &--min {
+      padding-right: 38px;
+      padding-left: 38px;
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+    @media (max-width: 479px) {
+      &--min {
+        text-align: center;
+        width: 100%;
+      }
+    }
   }
   &__subcontent {
     margin: 0;

@@ -6,12 +6,14 @@ import maps from "./files/maps.js";
 import modal from "./files/modal.js";
 import sliders from "./files/sliders.js";
 import smoothScroll from "./files/smooth-scroll.js";
+import switchPages from "./files/switch-pages.js";
 import tab from "./files/tab.js";
 import videos from "./files/videos.js";
 
 flsFunctions.mediaAdaptive();
 
 burger();
+switchPages();
 headerScroll();
 sliders();
 tab();
