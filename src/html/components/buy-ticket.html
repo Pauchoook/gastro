@@ -64,12 +64,17 @@
             >Я ознакомился с <a href="#" target="_blank">политикой конфиденциальности</a> и даю
             согласие на обработку персональных данных</label
           >
-          <button type="submit" class="btn btn-fill btn-blue buy-ticket__item-btn">Зарегестрироваться</button>
+          <button type="submit" class="btn btn-fill btn-blue buy-ticket__item-btn">
+            Зарегестрироваться
+          </button>
         </form>
       </div>
       <div class="buy-ticket__item buy-ticket__item--vip">
         <img src="@img/pictures/tickets-2.png" alt="Билет" class="buy-ticket__item-icon" />
-        <h3 class="buy-ticket__item-title">VIP- <br> Билет</h3>
+        <h3 class="buy-ticket__item-title">
+          VIP- <br />
+          Билет
+        </h3>
         <span class="buy-ticket__price-subtitle">Цена</span>
         <p class="buy-ticket__price-content">0 руб. (регистрация обязательна)</p>
         <form action="#" class="form buy-ticket__item-form">
@@ -126,8 +131,50 @@
             >Я ознакомился с <a href="#" target="_blank">политикой конфиденциальности</a> и даю
             согласие на обработку персональных данных</label
           >
-          <button type="submit" class="btn btn-fill btn-peach buy-ticket__item-btn">Зарегестрироваться</button>
+          <button type="submit" class="btn btn-fill btn-peach buy-ticket__item-btn">
+            Зарегестрироваться
+          </button>
         </form>
+      </div>
+    </div>
+  </div>
+  <!-- открывается по классу "open" -->
+  <div class="modal">
+    <div class="modal__overlay">
+      <div class="modal__window buy-ticket__modal-window">
+        <img src="@img/icons/mail.png" alt="Почта" class="buy-ticket__modal-icon">
+        <button class="btn modal__close">
+          <svg class="modal__close-icon">
+            <use xlink:href='img/icons/icons.svg#icon-close'></use>
+          </svg>
+        </button>
+        <h3 class="buy-ticket__modal-title">
+          Ура! Вы успешно зарегистрировались на Gastro Industry Fest и готовы покорять Север! Будем
+          ждать вас 27 августа на Площади металлургов.
+        </h3>
+        <p class="buy-ticket__modal-content">
+          Вам уже пришло подтверждение на почту: сохраните его, чтобы показать на входе.
+        </p>
+        <button class="btn btn-fill btn-red buy-ticket__modal-btn">
+          Занесите мероприятие в календарь и подпишитесь на чат-бота!
+        </button>
+        <p class="buy-ticket__modal-bottom-content">Присоединяйтесь к нам в соцсетях</p>
+        <ul class="list socials socials--peach buy-ticket__modal-socials">
+          <li>
+            <a href="#" class="socials__btn">
+              <svg class="socials__icon">
+                <use xlink:href="img/icons/icons.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socials__btn">
+              <svg class="socials__icon">
+                <use xlink:href="img/icons/icons.svg#icon-tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -148,4 +148,78 @@
       margin-top: 20px;
     }
   }
+  &__modal-window {
+    max-width: 870px;
+    @include laptop-min {
+      max-width: calc(100vw - 120px);
+    }
+    @include mobile {
+      max-width: calc(100vw - 20px);
+    }
+  }
+  &__modal-icon {
+    display: block;
+    width: 150px;
+    margin: 0px auto 20px auto;
+    @include tablet {
+      width: 95px;
+      margin-bottom: 8px;
+    }
+  }
+  &__modal-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--blue-2);
+    margin: 0px 0px 18px 0px;
+    @include laptop-min {
+      font-size: 32px;
+    }
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+  &__modal-content {
+    max-width: 470px;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0px auto 35px auto;
+    @include laptop-min {
+      font-size: 18px;
+    }
+    @include tablet {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  &__modal-btn {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 40px;
+    @include laptop-min {
+      font-size: 18px;
+    }
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__modal-bottom-content {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--peach-3);
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    @media (max-width: 419px) {
+      padding: 0 30px;
+    }
+  }
+  &__modal-socials {
+    justify-content: center;
+  }
 }

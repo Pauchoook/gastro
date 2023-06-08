@@ -97,40 +97,6 @@
     padding-left: 70px;
     color: var(--dark-purple);
   }
-  &__social {
-    display: flex;
-    column-gap: 25px;
-    @include mobile {
-      column-gap: 16px
-    }
-  }
-  &__social-btn {
-    @include flex-center;
-    width: 86px;
-    height: 86px;
-    border: 3px solid var(--gray-1);
-    transition: ease, background-color 0.2s ease;
-    @include hover {
-      background-color: var(--gray-1);
-      color: var(--dark-purple);
-    }
-    @include laptop {
-      width: 68px;
-      height: 68px;
-    }
-    @include mobile {
-      width: 64px;
-      height: 64px;
-    }
-  }
-  &__social-icon {
-    width: 40px;
-    height: 40px;
-    @include laptop {
-      width: 30px;
-      height: 30px;
-    }
-  }
   &__subcontent {
     margin: 0;
     font-weight: 600;
