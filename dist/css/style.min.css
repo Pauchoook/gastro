@@ -1339,7 +1339,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 @media (max-width: 767px) {
   .hero {
-    padding: 95px 0px 280px 0px;
+    padding: 95px 0px 60px 0px;
+  }
+  .hero--partners {
+    padding-bottom: 280px;
   }
 }
 .hero__bg {

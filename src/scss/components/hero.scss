@@ -8,7 +8,10 @@
     padding: 140px 0px 100px 0px;
   }
   @include tablet {
-    padding: 95px 0px 280px 0px;
+    padding: 95px 0px 60px 0px;
+    &--partners {
+      padding-bottom: 280px;
+    }
   }
   &__bg {
     position: absolute;
