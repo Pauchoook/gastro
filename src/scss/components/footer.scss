@@ -35,14 +35,21 @@
   }
   &__sites-parent-img {
     flex: 1;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
   &__sites-img {
     display: block;
+    margin: 0 auto;
     width: 150px;
     height: auto;
+    &--school {
+      width: 115px;
+    }
     @include tablet {
       width: 90px;
+      &--school {
+        width: 80px;
+      }
     }
   }
   &__sites-btn {

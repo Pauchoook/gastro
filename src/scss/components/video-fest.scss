@@ -10,6 +10,7 @@
     background: url("../img/icons/car.png") 0 0 / 100% 100% no-repeat;
     top: -90px;
     right: 145px;
+    z-index: 1;
   }
   @include desktop {
     padding: 120px 0px;
