@@ -57,7 +57,8 @@
     &--vip {
       .buy-ticket__item-title,
       .buy-ticket__price-subtitle,
-      .buy-ticket__price-content {
+      .buy-ticket__price-content,
+      .buy-ticket__spoller-icon {
         color: var(--peach-4);
       }
     }
@@ -136,6 +137,59 @@
     }
     @include tablet {
       font-size: 18px;
+    }
+  }
+  &__spollers {
+    margin-bottom: 40px;
+    color: var(--gray-1);
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__spoller-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    &._spoller-active {
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &__spoller-icon {
+    width: 12px;
+    height: 12px;
+    color: var(--blue-1);
+    transition: transform 0.2s ease;
+  }
+  &__spoller-list {
+    padding-top: 30px;
+    max-width: 360px;
+    @include laptop {
+      padding-top: 15px;
+    }
+  }
+  &__spoller-list-item {
+    position: relative;
+    font-weight: 200;
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 120%;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 4px;
+      background-color: var(--gray-1);
+      border-radius: 50%;
+      left: 13px;
+      top: 10px;
     }
   }
   &__item-form {
