@@ -5,4 +5,7 @@
 .body {
   background-color: var(--gray-1);
   color: var(--dark);
+  &._gray {
+    background-color: var(--gray-3);
+  }
 }

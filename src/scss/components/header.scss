@@ -35,11 +35,12 @@
     align-items: center;
   }
   &__logo {
-    max-width: 200px;
+    display: block;
+    width: 200px;
     margin-right: 110px;
     transition: max-width 0.2s ease;
     @media (max-width: 1199px) {
-      max-width: 155px;
+      width: 155px;
       margin-right: 50px;
     }
   }
